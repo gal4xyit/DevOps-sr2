@@ -1,6 +1,6 @@
 def _validate_text(text):
     if not isinstance(text, str):
-        raise TypeError("Аргумент має бути рядком")
+        raise TypeError(f"Аргумент має бути рядком, отримано {type(text).__name__}")
 
 
 def print_text(text):
